@@ -7,6 +7,7 @@ module.exports = {
       'gatsby-plugin-react-helmet',
       'gatsby-plugin-styled-components',
       'gatsby-plugin-sharp',
+      'gatsby-plugin-netlify-cms',
       'gatsby-transformer-sharp',
       {
         resolve: 'gatsby-source-filesystem',
