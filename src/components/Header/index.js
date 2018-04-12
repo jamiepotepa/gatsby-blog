@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 import Img from 'gatsby-image';
-import logo from '../../images/logo.svg';
+import logo from '../../images/logo-jp.svg';
 
 const HeaderWrapper = styled.div`
     background: #524763;
@@ -13,7 +13,7 @@ const HeaderWrapper = styled.div`
     height: ${({ isHome }) => (isHome ? '70vh' : '20vh')};
     h1 {
         img {
-            height: 80px;
+            height: 120px;
         }
     }
 `;
@@ -21,7 +21,7 @@ const HeaderWrapper = styled.div`
 const HeaderContainer = styled.div`
     margin: 0 auto;
     max-width: 960px;
-    padding: 1.45rem 1.0875rem;
+    padding: 0.5rem 1.0875rem;
     position: relative;
     z-index: 2;
     display: flex;
@@ -84,7 +84,7 @@ export default class Header extends Component {
                 <HeaderContainer>
                 <h1 style={{ margin: 0 }}>
                     <Link to="/" style={{ color: 'white', textDecoration: 'none' }} >
-                        <img src={logo} alt="Level up Logo"/>
+                        <img src={logo} alt="JP logo"/>
                     </Link>
                 </h1>
                 <MainNav>
@@ -104,7 +104,7 @@ export default class Header extends Component {
                     top: 0,
                     width: '100%',
                     height: '100%',
-                    opacity: 0.3
+                    opacity: 0.5
                 }}sizes={data.background.sizes} />
             </HeaderWrapper>
         )

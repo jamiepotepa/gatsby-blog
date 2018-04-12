@@ -2,6 +2,8 @@ backend:
   name: github
   repo: jamiepotepa/gatsby-blog
 
+publish_mode: editorial_workflow
+
 media_folder: static/assets
 public_folder: /assets
 
@@ -15,3 +17,12 @@ collections:
       - { name: date, label: Created At, widget: date }
       - { name: body, label: Post, widget: markdown }
       - { name: image, label: Image, widget: image, required: false }
+  - name: portfolio
+    label: Portfolio
+    folder: src/portfolio
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - { name: image, label: Header Image, widget: image, required: false }
+      - { name: client, label: Client, widget: string }
+      - { name: body, label: Body, widget: markdown }
