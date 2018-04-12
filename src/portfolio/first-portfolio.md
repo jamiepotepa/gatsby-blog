@@ -1,5 +1,5 @@
 ---
 title: First portfolio
-Client: Ready
+postType: Portfolio
 ---
 Some default text in the body section of portfolio one.
