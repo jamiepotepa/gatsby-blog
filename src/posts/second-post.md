@@ -1,5 +1,6 @@
 ---
 title: My Second post - edited
+postType: Post
 date: '2018-04-02'
 image: /assets/bath-old.jpg
 ---
