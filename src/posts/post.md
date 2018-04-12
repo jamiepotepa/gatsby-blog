@@ -1,5 +1,6 @@
 ---
 title: Welcome to the new blog
+postType: Post
 date: '2018-03-04'
 image: ''
 ---
