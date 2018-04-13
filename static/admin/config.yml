@@ -4,7 +4,7 @@ backend:
 
 publish_mode: editorial_workflow
 
-media_folder: static/assets
+media_folder: src/assets
 public_folder: /assets
 
 collections:
@@ -14,6 +14,7 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
+      - { name: postType, label: Post Type, widget: select, options: ['Post', 'Portfolio']}
       - { name: date, label: Created At, widget: date }
       - { name: body, label: Post, widget: markdown }
       - { name: image, label: Image, widget: image, required: false }
@@ -23,6 +24,7 @@ collections:
     create: true
     fields:
       - { name: title, label: Title }
+      - { name: postType, label: Post Type, widget: select, options: ['Portfolio', 'Post']}
       - { name: image, label: Header Image, widget: image, required: false }
-      - { name: client, label: Client, widget: string }
+      - { name: client, label: Client, widget: string, required: false }
       - { name: body, label: Body, widget: markdown }

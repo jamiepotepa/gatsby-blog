@@ -3,19 +3,25 @@ import Link from 'gatsby-link';
 
 import PostListing from '../components/Posts/PostListing';
 
-const IndexPage = ({ data }) => (
+const PortfolioPage = ({ data }) => (
   <div>
-    <h2>Posts</h2>
+    <h2>Portfolio</h2>
     {data.allMarkdownRemark.edges.map(({ node }) => (
-        node.frontmatter.postType === 'Post' && <PostListing key={node.id} post={node} />
+        node.frontmatter.postType === 'Portfolio' && <PostListing key={node.id} post={node} />
     ))}
   </div>
 );
 
-export default IndexPage;
+export default PortfolioPage;
 
 export const query = graphql`
-query IndexPage {
+query PortfolioPage {
+    site {
+      siteMetadata {
+        title
+        desc
+      }
+    }
     allMarkdownRemark(sort: {
         fields: [frontmatter___date],
         order: DESC
