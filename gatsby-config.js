@@ -6,9 +6,9 @@ module.exports = {
     plugins: [
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-styled-components',
+        'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
         'gatsby-plugin-netlify-cms',
-        'gatsby-transformer-sharp',
         {
             resolve: 'gatsby-plugin-typography',
             options: {
@@ -26,7 +26,7 @@ module.exports = {
             resolve: 'gatsby-source-filesystem',
             options: {
                 name: 'uploads',
-                path: `${__dirname}/src/assets/`
+                path: `${__dirname}/static/assets/`
             }
         },
         {

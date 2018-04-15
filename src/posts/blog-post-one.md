@@ -2,7 +2,7 @@
 title: Blog post one
 postType: Post
 date: '2018-04-13'
-image: /assets/img25.jpg
+image: '/assets/img25.jpg'
 ---
 This is my first blog post.
 

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Img from 'gatsby-image';
 
 export default class SinglePost extends Component {
 
