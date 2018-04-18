@@ -22,18 +22,18 @@ module.exports = {
                 path: `${__dirname}/src/images/`
             }
         },
+        // {
+        //     resolve: 'gatsby-source-filesystem',
+        //     options: {
+        //         name: 'uploads',
+        //         path: `${__dirname}/static/assets/`
+        //     }
+        // },
         {
             resolve: 'gatsby-source-filesystem',
             options: {
-                name: 'uploads',
-                path: `${__dirname}/static/assets/`
-            }
-        },
-        {
-            resolve: 'gatsby-source-filesystem',
-            options: {
-                name: 'src',
-                path: `${__dirname}/src/`
+                name: 'portfolio',
+                path: `${__dirname}/src/portfolio/`
             }
         },
         {
@@ -48,12 +48,12 @@ module.exports = {
             options: {
                 excerpt_separator: `<!-- excerpt end -->`,
                 plugins: [
-                    {
-                        resolve: 'gatsby-remark-relative-images',
-                        options: {
-                            name: 'uploads'
-                        }
-                    },
+                    // {
+                    //     resolve: 'gatsby-remark-relative-images',
+                    //     options: {
+                    //         name: 'uploads'
+                    //     }
+                    // },
                     {
                         resolve: 'gatsby-remark-images',
                         options: {

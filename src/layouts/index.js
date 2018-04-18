@@ -4,8 +4,12 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 //import './index.css'
+const MainWrapper = styled.div`
+    min-height: 100vh;
+`;
 
 const BodyWrapper = styled.div`
     margin: 0 auto;
@@ -15,19 +19,20 @@ const BodyWrapper = styled.div`
 `;
 
 const TemplateWrapper = ({ children, data, location }) => (
-  <div>
-    <Helmet
-      title="Gatsby portfolio"
-      meta={[
-        { name: 'description', content: 'Portfolio site' },
-        { name: 'keywords', content: 'Portfolio, Gatsby' },
-      ]}
-    />
-    <Header data={data} location={location}/>
-    <BodyWrapper>
-      {children()}
-    </BodyWrapper>
-  </div>
+    <MainWrapper>
+        <Helmet
+            title="Gatsby portfolio"
+            meta={[
+                { name: 'description', content: 'Portfolio site' },
+                { name: 'keywords', content: 'Portfolio, Gatsby' },
+            ]}
+        />
+        <Header data={data} location={location}/>
+        <BodyWrapper>
+            {children()}
+        </BodyWrapper>
+        <Footer />
+    </MainWrapper>
 )
 
 TemplateWrapper.propTypes = {
@@ -44,7 +49,7 @@ query LayoutQuery {
         desc
       }
     }
-    background: imageSharp(id: { regex: "/bg.jpeg/" }) {
+    background: imageSharp(id: { regex: "/sanfrancisco.jpg/" }) {
         sizes(maxWidth: 1240) {
             ...GatsbyImageSharpSizes
         }
