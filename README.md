@@ -4,6 +4,7 @@ A side project to get to grips with [Gatsby.js](https://www.gatsbyjs.org).
 
 Gatsby.js,
 React,
+GraphQL,
 Styled components,
 Netlify,
 Netlify CMS
